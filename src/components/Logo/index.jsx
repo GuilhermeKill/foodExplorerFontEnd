@@ -1,12 +1,12 @@
 import { Container } from "./style";
-
+import  Logoimage  from '../../assets/logo.svg'
 
 export function Logo({...rest}){
 
     return(
         <Container>
-            <img src="" alt="" />
-            <h1>asdasdasdasd</h1>
+            <img src={Logoimage} alt="" />
+            <h1>food explorer</h1>
         </Container>
     )
 }
