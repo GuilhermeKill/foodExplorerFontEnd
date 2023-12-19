@@ -7,13 +7,16 @@ import GlobalStyle from './styles/global.js'
 
 import  theme  from './styles/theme.js'
 
-import { SingIn } from './pages/SingIn'
+import { Home } from './pages/Home'
+import { Slider } from './components/Slider'
+import { Card } from './components/Card/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <SingIn />
+      <Home />
+      
     </ThemeProvider>  
   </React.StrictMode>,
 )

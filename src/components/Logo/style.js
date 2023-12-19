@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,9 +9,5 @@ export const Container = styled.div`
 
     > h1{
         font-family: ${({ theme }) => theme.FONTS.ROBOTO};
-    }
-    > img{
-
-    }
-    
+    } 
 `

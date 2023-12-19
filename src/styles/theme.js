@@ -8,6 +8,10 @@ export default {
         LIGHT_600: "#76797B",
         LIGHT_700: "#4D585E",
 
+        GRADIENT_100: "linear-gradient(90deg, rgba(0,10,15,0) 0%, rgba(0,10,15,1) 100%)",
+        GRADIENT_200: "linear-gradient(180deg, #091E26 0%, #00131C 100%)",
+
+
         DARK_100: "#000405",
         DARK_200: "#00070A",
         DARK_300: "#000204",

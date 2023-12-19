@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+    :root{
+        font-size: 16px;
+    }
+
     *{
         margin: 0;
         padding: 0;
@@ -13,8 +17,8 @@ export default createGlobalStyle`
     }
 
     body, input, button, textarea{
+        -webkit-font-smoothing: antialiased;
         font-size: 16px;
-        outline: none;
     } 
     
     a {
