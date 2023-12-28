@@ -8,14 +8,16 @@ import GlobalStyle from './styles/global.js'
 import  theme  from './styles/theme.js'
 
 import { Home } from './pages/Home'
-import { Slider } from './components/Slider'
-import { Card } from './components/Card/index.jsx'
+import { Details } from './pages/Details'
+import { IncludeButton } from './components/IncludeButton/index.jsx'
+import { DescriptionSection } from './components/DescriptionSection/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Home />
+      <Details />
+      
       
     </ThemeProvider>  
   </React.StrictMode>,

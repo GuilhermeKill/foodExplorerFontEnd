@@ -1,16 +1,45 @@
-import { Container } from "./style";
+import { Container, Content } from "./style";
 import { Header } from '../../components/Header'
 import { Banner } from '../../components/Banner'
-import { Slider } from "../../components/Slider";
-
+import { Carousel } from '../../components/Slider'
+import { Card } from "../../components/Card";
+import { Footer } from "../../components/Footer";
 
 export function Home(){
 
     return(
         <Container>
             <Header />
-            <Banner />
-            <Slider />
+            <Content>
+                <Banner />
+                <Carousel title={"Refeições"} content={[
+                    <Card key={1} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={2} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={3} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                    <Card key={4} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={5} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={6} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                    <Card key={7} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={8} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={9} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                ]
+                }/>
+
+                <Carousel title={"Bebidas"} content={[
+                    <Card key={1} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={2} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={3} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                    <Card key={4} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={5} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={6} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                    <Card key={7} data={{name: "bASDASla", description: "lasASDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={8} data={{name: "blaASDASD", description: "lasDASDASDASDASd", price: '12,65R$' }}/>,
+                    <Card key={9} data={{name: "blASDASDa", description: "laDASDASDASDASDASDsd", price: '12,65R$' }}/>,
+                ]
+                }/>
+            </ Content>
+
+            <Footer />
         </Container>
     )
 }
